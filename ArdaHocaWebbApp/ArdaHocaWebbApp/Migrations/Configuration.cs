@@ -21,6 +21,7 @@ namespace ArdaHocaWebbApp.Migrations
             //  to avoid creating duplicate seed data.
             context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerTypes() { ID = 1, Name = "Admin" });
             context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerTypes() { ID = 2, Name = "Moderatör" });
+            context.Managers.AddOrUpdate(n => n.ID, new Models.Manager() { ID = 1, Name = "Oguzhan", Surname = "Kaynak", Mail = "oguz-kaynak@hotmail.com", ManagerTypes_ID = 1, Password = "12345678", UserName = "ozi", IsActive = true });
         }
     }
 }
